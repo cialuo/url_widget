@@ -3,7 +3,7 @@
     'name': "url widget",
     'version': '1.0',
     'depends': ['base'],
-    'author': "糖葫芦 39181819@qq.com",
+    'author': u"糖葫芦 39181819@qq.com",
     'category': 'Category',
     'description': """
     Description text
