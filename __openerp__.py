@@ -1,8 +1,9 @@
+# -*- coding:utf-8 -*-
 {
     'name': "url widget",
     'version': '1.0',
     'depends': ['base'],
-    'author': "Author Name",
+    'author': "糖葫芦 39181819@qq.com",
     'category': 'Category',
     'description': """
     Description text
