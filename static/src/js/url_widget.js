@@ -30,9 +30,10 @@ openerp.url_widget = function (instance, local) {
         },
         render_value: function () {
             if (this.get("effective_readonly")) {
-                this.$("img").attr("src",this.get("value")); //.attr("width","180");
+                this.$("a").attr("href",this.get("value"));
+                this.$("img").attr("src",this.get("value"));
             } else {
-                this.$("input").val(this.get("value"));
+                this.$("#input_url").val(this.get("value"));
             }
         },
     });

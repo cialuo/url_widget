@@ -3,10 +3,31 @@
     <t t-name="FieldCharUrl">
         <div>
             <t t-if="widget.get('effective_readonly')">
-                <img></img>
+                <link rel="stylesheet" href="/url_widget/static/src/js/jquery-lightbox/css/lightbox.css" type="text/css" media="screen" />
+                <a href="images/image-1.jpg" class="lightbox" title="my caption">
+                    <img height="40" alt=""/>
+                </a>
+                <t t-js="ctx">
+                    function intervalRun()
+                    {
+                        $(".lightbox").lightbox({
+                                fitToScreen: true,
+                                imageClickClose: false
+                            });
+                    }
+                    function foo()
+                    {
+
+                        window.setInterval(function()
+                        {
+                            intervalRun();
+                        }, 3000);
+                    }
+                    foo();
+                </t>
             </t>
             <t t-if="! widget.get('effective_readonly')">
-                <input></input>
+                <input id="input_url"></input>
             </t>
         </div>
     </t>

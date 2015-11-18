@@ -3,6 +3,7 @@
     <data>
         <template id="assets_backend" name="url_widget_assets" inherit_id="web.assets_backend">
             <xpath expr="." position="inside">
+                <script type="text/javascript" src="/url_widget/static/src/js/jquery-lightbox/jquery.lightbox.js"></script>
                 <script type="text/javascript" src="/url_widget/static/src/js/url_widget.js"/>
             </xpath>
         </template>
